@@ -1,0 +1,150 @@
+/* auteur: Trystan Eveno */
+
+body {
+  background: #e5e5e5;
+}
+
+nav {
+  font: 15px Calibri;
+  top: 50px;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50px;
+  background: #374147;
+}
+
+nav .nav-ul {
+	list-style: none;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+nav .nav-ul a {
+	text-decoration: none;
+	line-height: 50px;
+	padding: 0 15px;
+  color: #ffffff;
+}
+
+nav .nav-ul .nav-li {
+	position: relative;
+	float: left;
+  height: 50px;
+	margin: 0 auto;
+	padding: 0;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -ms-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+nav .nav-ul .nav-li.nav-currentPage {
+	background: #ff0000;
+  border-left: 4px solid #374147;
+}
+
+nav .nav-ul .nav-li:hover {
+	background: #ff0000;
+}
+
+nav .nav-ul ul {
+	visibility: hidden;
+  opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ffffff;
+	padding: 0;
+  list-style: none;
+  -webkit-transition: visibility 0.3s, opacity 0.3s;
+  -moz-transition: visibility 0.3s, opacity 0.3s;
+  -ms-transition: visibility 0.3s, opacity 0.3s;
+  -o-transition: visibility 0.3s, opacity 0.3s;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+nav .nav-ul ul li {
+	float: none;
+	width: 170px
+}
+
+nav .nav-ul ul a {
+	padding: 10px 20px;
+  color: #8d8d8d;
+}
+
+nav .nav-ul ul ul {
+	top: 49.5px;
+	left: 100%;
+}
+
+nav .nav-ul li {
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -ms-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+nav .nav-ul li:hover {
+	background: #ff0000;
+}
+
+nav .nav-ul li:hover > a {
+	color: #ffffff;
+}
+
+nav .nav-ul li > ul:before {
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ffffff;
+  border-left: 7px solid transparent;
+  content: '';
+}
+
+nav .nav-ul ul li > ul:before {
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #ffffff;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+
+nav .nav-ul li:hover > ul {
+	visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    font-size: 12px;
+  }
+
+  nav .nav-ul a {
+  	padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    font-size: 10px;
+  }
+
+  nav .nav-ul a {
+  	padding: 0 5px;
+  }
+
+  nav .nav-ul ul li > ul:before {
+    left: -12px;
+  }
+}
