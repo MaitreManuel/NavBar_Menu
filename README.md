@@ -6,6 +6,6 @@ A simple navigation menu with only HTML/CSS.
 
 ## How To Use
 
-You just need to download this template [here](https://github.com/user/repo/blob/branch/other_file.md) or on a terminal :
+You just need to download this template [here](https://github.com/MaitreManuel/NavBar_Menu/archive/master.zip) or on a terminal :
 
     git clone https://github.com/MaitreManuel/NavBar_Menu.git
