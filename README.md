@@ -15,3 +15,7 @@ You can work directly with the `index.html`, and build your own website !
 ## Future Upgrade
 
 * Menu full responsive (already did, but I think I'll improve it)
+
+## Licence
+
+<a href="https://choosealicense.com/licenses/mit/#" target="_blank">MIT</a>
